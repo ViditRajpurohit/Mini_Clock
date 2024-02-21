@@ -16,6 +16,16 @@
         class="bg-orange-500 h-8 w-36 rounded-lg flex justify-center items-center text-white mt-2"
       ></div>
     </div>
-    <script src="script.js"></script>
+    <script>
+      let clock = document.querySelector("#clock");
+  setInterval(() => {
+    let date = new Date();
+    clock.innerHTML = date.toLocaleTimeString()
+    console.log("hello");
+    
+
+},1000)
+
+    </script>
   </body>
 </html>
